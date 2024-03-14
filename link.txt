@@ -1,0 +1,25 @@
+WINDOWS CMD
+
+"%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHD9CxGaeLFyVwZZ7EUPrFhcOkdv28XaM8hFqXoqXUFYJAQQuWvM_P4NgVQsz3A6zg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=%COMPUTERNAME%
+
+
+WINDOWS POWERSHELL
+
+& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHD9CxGaeLFyVwZZ7EUPrFhcOkdv28XaM8hFqXoqXUFYJAQQuWvM_P4NgVQsz3A6zg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+
+
+DEBIAN LINUX
+
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AeaYSHD9CxGaeLFyVwZZ7EUPrFhcOkdv28XaM8hFqXoqXUFYJAQQuWvM_P4NgVQsz3A6zg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
+
+
+
+
+
+SOFTWARE INSTALL
+FOR WINDOWS
+https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi
+
+FOR DEBIAN LINUX
+https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+
