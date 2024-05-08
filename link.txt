@@ -3,10 +3,9 @@ WINDOWS CMD
 "%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHAoiYaB33NnngBsEcc3GwQJHK8WNftRj12L7Vg_rz-tPxvfcmKKX-4F1vZKOfdiWg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=%COMPUTERNAME%
 
 
-WINDOWS POWERSHELL
+WINDOWS POWERSHELL : kali.linux
 
-& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHAoiYaB33NnngBsEcc3GwQJHK8WNftRj12L7Vg_rz-tPxvfcmKKX-4F1vZKOfdiWg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
-
+& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYc7MMQ8_8QhLU5LfgKbvWmxn4XR6ROE6G4I3eRdUH7ttdHJ4db6MkhnzRImLV3fFg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
 
 DEBIAN LINUX
 
