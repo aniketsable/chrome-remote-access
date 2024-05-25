@@ -1,24 +1,33 @@
-WINDOWS CMD
-
-"%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHAoiYaB33NnngBsEcc3GwQJHK8WNftRj12L7Vg_rz-tPxvfcmKKX-4F1vZKOfdiWg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=%COMPUTERNAME%
-
-
-WINDOWS POWERSHELL : kali.linux
-
-& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYc7MMQ8_8QhLU5LfgKbvWmxn4XR6ROE6G4I3eRdUH7ttdHJ4db6MkhnzRImLV3fFg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
-
-DEBIAN LINUX
-
-DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AeaYSHAoiYaB33NnngBsEcc3GwQJHK8WNftRj12L7Vg_rz-tPxvfcmKKX-4F1vZKOfdiWg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
-
-
-
-
-
 SOFTWARE INSTALL
 FOR WINDOWS
 https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi
 
 FOR DEBIAN LINUX
 https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+
+
+
+
+WINDOWS POWERSHELL : kali.linux
+
+& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYfi7kgNF5eV_L5C5I6L0lOpPgrwdU_T1I4KapK2hVLxJAek-Vm7WypiZ9eZHGnAQA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+
+
+WINDOWS CMD kali.linux
+
+"%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYfi7kgNF5eV_L5C5I6L0lOpPgrwdU_T1I4KapK2hVLxJAek-Vm7WypiZ9eZHGnAQA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=%COMPUTERNAME%
+
+
+DEBIAN LINUX : kali.linux
+
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AdLIrYfi7kgNF5eV_L5C5I6L0lOpPgrwdU_T1I4KapK2hVLxJAek-Vm7WypiZ9eZHGnAQA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
+
+
+
+242:
+"%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYdwv24_XML37U4DDiTdcy_WV4jV5rfagfvhG11VvxgDyt2plHf8fLrGtvFSBsQ3rA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=%COMPUTERNAME%
+
+& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AdLIrYdwv24_XML37U4DDiTdcy_WV4jV5rfagfvhG11VvxgDyt2plHf8fLrGtvFSBsQ3rA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AdLIrYdwv24_XML37U4DDiTdcy_WV4jV5rfagfvhG11VvxgDyt2plHf8fLrGtvFSBsQ3rA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
 
